@@ -72,13 +72,12 @@ p {
 }
 
 #midle {
-    
-    
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
     width: 29vw;
-    padding: 1.5vh 1vw;
+    
 
 }
 #hands{
@@ -88,10 +87,11 @@ p {
 h3 {
   font-weight: 600;
   font-size: 3rem;
-
+  
   p{
     font-size: 1.4rem;
       width: 60%;
+      margin-bottom: 1.5rem;
       
   }
 }

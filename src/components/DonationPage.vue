@@ -15,6 +15,7 @@ button {
   color: #FFFFFF;
   font-size: 1.5rem;
   font-weight: 600;
+ 
 
   &:hover {
     cursor: pointer;

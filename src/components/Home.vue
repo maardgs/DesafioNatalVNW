@@ -1,10 +1,11 @@
 <script setup>
 import Navbar from './Navbar.vue'
+import store from '../assets/loja.png'
 import Timer from './Timer.vue'
 import DonationPage from './DonationPage.vue'
-import store from '../assets/loja.png' 
-import hands from '../assets/hands.png'
+import Conect from './Conect.vue'
 import Footer from './Footer.vue'
+
 
 </script>
 
@@ -20,15 +21,7 @@ import Footer from './Footer.vue'
             <img id="store" :src="store" alt="Loja de Natal">
         </section>
         <Timer />
-        <section> 
-             <img id ="hands" :src="hands" alt="Mãos segurando um efeito de Natal">
-            <div id="midle">
-                <h3>Conectando generosidade ao redor do mundos</h3>
-                <p>Celebre a magia do Natal de uma maneira especial! Descubra a plataforma que permite a doação de presentes 
-                    significativos para aqueles que mais precisam. Faça parte do movimento e compartilhe o verdadeiro espírito da generosidade.</p>
-                <DonationPage />
-            </div>
-        </section>
+        <Conect />
         <Footer />
     </header> 
 </template>
@@ -38,25 +31,26 @@ import Footer from './Footer.vue'
 header {
   background-color: #FFE9E8;
   height: 53vh;
+  padding: 30px 0; 
 }
 
 section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5% 15%;
+  padding: 1% 10%;
 
   #info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
-    width: 29vw;
+    width: 30vw;
   }
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 
   span {
     color: #CD3C32;
@@ -64,36 +58,11 @@ h1 {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 #store {
   width: 28vw;
-}
-
-#midle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
-    width: 29vw;
-    
-
-}
-#hands{
-    width: 28vw;
-}
-
-h3 {
-  font-weight: 600;
-  font-size: 3rem;
-  
-  p{
-    font-size: 1.4rem;
-      width: 60%;
-      margin-bottom: 1.5rem;
-      
-  }
 }
 
 </style>

@@ -9,7 +9,7 @@ import logo_google from '../assets/logo_google.png'
 
 <template>
 <section id="footer">
-  <div> 
+  <div id="footerB"> 
   <img :src="noel" alt="Noel"> 
   <p>Feliz Natal</p>
   </div>
@@ -26,24 +26,32 @@ import logo_google from '../assets/logo_google.png'
 <style scoped>
 #footer {
   background-color: #ffd5d3;
-  height: 190px; 
+  height: 50px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%; 
+  padding: 0 1%; 
 }
 
+#footerB {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 img {
-  width: 40px;
+  width: 30px;
   &:hover {
     cursor: pointer;
   } 
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   margin: 0;
+  &:hover {
+    cursor: pointer;
+  } 
 }
 
 #icons {

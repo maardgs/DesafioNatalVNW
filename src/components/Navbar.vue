@@ -16,7 +16,9 @@ import noel from '../assets/noel.png'
 #navbar{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 10px;
+  
 }
 
 img{
@@ -24,10 +26,11 @@ img{
 }
 
 p{
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
-  margin: 7%;
-  width: 150px;
+  margin: 0;
+  white-space: nowrap;
+  
 }
 
 </style>
